@@ -1,0 +1,45 @@
+--Create a grocery store database
+
+CREATE TABLE Inventory (id INTEGER PRIMARY KEY,
+Clothing TEXT, Color TEXT, Material TEXT, Price INTEGER);
+
+INSERT INTO Inventory VALUES (1, "TShirt", "White", "Cotton", 15);
+INSERT INTO Inventory VALUES (2, "TShirt", "Blue", "Cotton", 15);
+INSERT INTO Inventory VALUES (3, "TShirt", "Black", "Cotton", 15);
+INSERT INTO Inventory VALUES (4, "TShirt", "Gray", "Cotton", 15);
+INSERT INTO Inventory VALUES (5, "Leggings", "Blue", "Cotton", 25);
+INSERT INTO Inventory VALUES (6, "Leggings", "Black", "Cotton", 25);
+INSERT INTO Inventory Values (7, "BaseLayer Shirt", "Blue", "Polyester", 16); 
+INSERT INTO Inventory Values (8, "BaseLayer Shirt", "Black", "Polyester", 16);
+INSERT INTO Inventory Values (9, "BaseLayer Shirt", "Gray", "Polyester", 16);
+INSERT INTO Inventory Values (10, "BaseLayer Shirt", "White", "Polyester", 16); 
+INSERT INTO Inventory Values (11, "Shorts", "Black", "Cotton", 18); 
+INSERT INTO Inventory Values (12, "Shorts", "Blue", "Cotton", 18);
+INSERT INTO Inventory Values (13, "Shorts", "Gray", "Cotton", 18); 
+INSERT INTO Inventory Values (14, "Shorts", "White", "Cotton", 18);
+INSERT INTO Inventory Values (15, "Shorts", "Red", "Cotton", 18);
+
+--display the database  
+SELECT * FROM Inventory;
+
+--display the database ordered by Color. 
+SELECT * FROM Inventory ORDER BY Color;
+
+--display the database ordered by price. 
+SELECT * FROM Inventory ORDER BY Price;
+
+--what is the avg price of items in the section? 
+SELECT AVG(Price) FROM Inventory;
+
+--what is the Min price of items in the section? 
+SELECT MIN(Price) FROM Inventory;
+
+--what is the Max price of items in the section? 
+SELECT MAX(Price) FROM Inventory;
+
+
+
+
+
+
+
